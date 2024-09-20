@@ -9,8 +9,8 @@ import (
 )
 
 var (
-	errEmpty error = errors.New("empty file")
-	errArgs  error = errors.New("wrong input arguments")
+	errEmpty = errors.New("empty file")
+	errArgs  = errors.New("wrong input arguments")
 )
 
 func Slice() ([]float64, error) {

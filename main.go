@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	maths "functions/maths"
 	"log"
+	"maths/functions"
 )
 
 func main() {
