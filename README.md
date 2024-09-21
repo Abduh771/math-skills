@@ -17,7 +17,7 @@ math-skills/
 │   ├── Deviation.go       # Calculates the standard deviation
 │   ├── Median.go          # Finds the median of the dataset
 │   ├── Slice.go           # Reads and processes the dataset from a file
-│   ├── Sqrt.go            # Calculates square roots
+│   ├── sumOfSquares.go            # Calculates square roots
 │   ├── Variance.go        # Calculates the variance of the dataset
 ├── go.mod                 # Go module file
 ├── main.go                # Main program that prints the calculated results
