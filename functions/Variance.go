@@ -5,9 +5,9 @@ import "math"
 func Variance(slice []float64) int {
 	var result float64
 
-	ss := Sqrt(slice)
+	sumSquares := sumOfSquares(slice)
 
-	result = ss / float64(len(slice))
+	result = sumSquares / float64(len(slice))
 
 	result = math.Round(result)
 

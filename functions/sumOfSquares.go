@@ -1,9 +1,9 @@
 package maths
 
-func Sqrt(slice []float64) float64 {
+func sumOfSquares(slice []float64) float64 {
 	var mean float64 // sum of slice / elements
 	var temp float64
-	var res float64
+	var result float64
 	var length float64 = float64(len(slice))
 
 	for i := range slice {
@@ -15,8 +15,8 @@ func Sqrt(slice []float64) float64 {
 	for i := range slice {
 		temp = slice[i] - mean
 		temp *= temp
-		res += temp
+		result += temp
 	}
 
-	return res
+	return result
 }

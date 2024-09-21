@@ -1,9 +1,11 @@
 package maths
 
-import "math"
+import (
+	"math"
+)
 
 func Average(slice []float64) int {
-	var res int
+	var result int
 	var temp float64
 	var length float64 = float64(len(slice))
 
@@ -12,7 +14,7 @@ func Average(slice []float64) int {
 	}
 	temp = temp / length
 
-	res = int(math.Round(temp))
+	result = int(math.Round(temp))
 
-	return res
+	return result
 }
