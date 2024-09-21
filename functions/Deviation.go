@@ -3,15 +3,15 @@ package maths
 import "math"
 
 func Deviation(slice []float64) int {
-	var res float64
+	var result float64
 
 	ss := Sqrt(slice)
 
-	res = ss / float64(len(slice))
+	result = ss / float64(len(slice))
 
-	res = math.Sqrt(res)
+	result = math.Sqrt(result)
 
-	res = math.Round(res)
+	result = math.Round(result)
 
-	return int(res)
+	return int(result)
 }

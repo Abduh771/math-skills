@@ -16,20 +16,18 @@ var (
 func Slice() ([]float64, error) {
 	var slice []float64
 
-	arg := os.Args[1:]
-
-	if len(arg) != 1 {
+	if len(os.Args) != 2 {
 		return slice, errArgs
 	}
 
-	file := arg[0]
+	file := os.Args[1]
 
-	f, err := os.Open(file)
+	fileHandler, err := os.Open(file)
 	if err != nil {
 		return slice, fmt.Errorf("error: %v, while opening file: %s", err, file)
 	}
-	defer f.Close()
-	scanner := bufio.NewScanner(f)
+	defer fileHandler.Close()
+	scanner := bufio.NewScanner(fileHandler)
 
 	for scanner.Scan() {
 		line := scanner.Text()
